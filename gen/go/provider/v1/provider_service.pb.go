@@ -24,27 +24,27 @@ var File_provider_v1_provider_service_proto protoreflect.FileDescriptor
 
 const file_provider_v1_provider_service_proto_rawDesc = "" +
 	"\n" +
-	"\"provider/v1/provider_service.proto\x12\x16travel_service_apis.v1\x1a\x18provider/v1/search.proto\x1a\x19provider/v1/pricing.proto\x1a\x1dprovider/v1/reservation.proto2\xaa\x02\n" +
-	"\x0fProviderService\x12]\n" +
-	"\x06Search\x12(.travel_service_apis.v1.AirSearchRequest\x1a).travel_service_apis.v1.AirSearchResponse\x12T\n" +
-	"\x05Price\x12$.travel_service_apis.v1.PriceRequest\x1a%.travel_service_apis.v1.PriceResponse\x12b\n" +
-	"\aReserve\x12*.travel_service_apis.v1.ReservationRequest\x1a+.travel_service_apis.v1.ReservationResponseBZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"\"provider/v1/provider_service.proto\x12\vprovider.v1\x1a\x18provider/v1/search.proto\x1a\x19provider/v1/pricing.proto\x1a\x1dprovider/v1/reservation.proto2\xe8\x01\n" +
+	"\x0fProviderService\x12G\n" +
+	"\x06Search\x12\x1d.provider.v1.AirSearchRequest\x1a\x1e.provider.v1.AirSearchResponse\x12>\n" +
+	"\x05Price\x12\x19.provider.v1.PriceRequest\x1a\x1a.provider.v1.PriceResponse\x12L\n" +
+	"\aReserve\x12\x1f.provider.v1.ReservationRequest\x1a .provider.v1.ReservationResponseB[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var file_provider_v1_provider_service_proto_goTypes = []any{
-	(*AirSearchRequest)(nil),    // 0: travel_service_apis.v1.AirSearchRequest
-	(*PriceRequest)(nil),        // 1: travel_service_apis.v1.PriceRequest
-	(*ReservationRequest)(nil),  // 2: travel_service_apis.v1.ReservationRequest
-	(*AirSearchResponse)(nil),   // 3: travel_service_apis.v1.AirSearchResponse
-	(*PriceResponse)(nil),       // 4: travel_service_apis.v1.PriceResponse
-	(*ReservationResponse)(nil), // 5: travel_service_apis.v1.ReservationResponse
+	(*AirSearchRequest)(nil),    // 0: provider.v1.AirSearchRequest
+	(*PriceRequest)(nil),        // 1: provider.v1.PriceRequest
+	(*ReservationRequest)(nil),  // 2: provider.v1.ReservationRequest
+	(*AirSearchResponse)(nil),   // 3: provider.v1.AirSearchResponse
+	(*PriceResponse)(nil),       // 4: provider.v1.PriceResponse
+	(*ReservationResponse)(nil), // 5: provider.v1.ReservationResponse
 }
 var file_provider_v1_provider_service_proto_depIdxs = []int32{
-	0, // 0: travel_service_apis.v1.ProviderService.Search:input_type -> travel_service_apis.v1.AirSearchRequest
-	1, // 1: travel_service_apis.v1.ProviderService.Price:input_type -> travel_service_apis.v1.PriceRequest
-	2, // 2: travel_service_apis.v1.ProviderService.Reserve:input_type -> travel_service_apis.v1.ReservationRequest
-	3, // 3: travel_service_apis.v1.ProviderService.Search:output_type -> travel_service_apis.v1.AirSearchResponse
-	4, // 4: travel_service_apis.v1.ProviderService.Price:output_type -> travel_service_apis.v1.PriceResponse
-	5, // 5: travel_service_apis.v1.ProviderService.Reserve:output_type -> travel_service_apis.v1.ReservationResponse
+	0, // 0: provider.v1.ProviderService.Search:input_type -> provider.v1.AirSearchRequest
+	1, // 1: provider.v1.ProviderService.Price:input_type -> provider.v1.PriceRequest
+	2, // 2: provider.v1.ProviderService.Reserve:input_type -> provider.v1.ReservationRequest
+	3, // 3: provider.v1.ProviderService.Search:output_type -> provider.v1.AirSearchResponse
+	4, // 4: provider.v1.ProviderService.Price:output_type -> provider.v1.PriceResponse
+	5, // 5: provider.v1.ProviderService.Reserve:output_type -> provider.v1.ReservationResponse
 	3, // [3:6] is the sub-list for method output_type
 	0, // [0:3] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

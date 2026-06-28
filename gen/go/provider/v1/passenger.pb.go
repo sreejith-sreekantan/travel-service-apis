@@ -77,7 +77,7 @@ type Passenger struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	FirstName     string                 `protobuf:"bytes,1,opt,name=first_name,json=firstName,proto3" json:"first_name,omitempty"`
 	LastName      string                 `protobuf:"bytes,2,opt,name=last_name,json=lastName,proto3" json:"last_name,omitempty"`
-	Type          PassengerType          `protobuf:"varint,3,opt,name=type,proto3,enum=travel_service_apis.v1.PassengerType" json:"type,omitempty"`
+	Type          PassengerType          `protobuf:"varint,3,opt,name=type,proto3,enum=provider.v1.PassengerType" json:"type,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -137,18 +137,18 @@ var File_provider_v1_passenger_proto protoreflect.FileDescriptor
 
 const file_provider_v1_passenger_proto_rawDesc = "" +
 	"\n" +
-	"\x1bprovider/v1/passenger.proto\x12\x16travel_service_apis.v1\"\x82\x01\n" +
+	"\x1bprovider/v1/passenger.proto\x12\vprovider.v1\"w\n" +
 	"\tPassenger\x12\x1d\n" +
 	"\n" +
 	"first_name\x18\x01 \x01(\tR\tfirstName\x12\x1b\n" +
-	"\tlast_name\x18\x02 \x01(\tR\blastName\x129\n" +
-	"\x04type\x18\x03 \x01(\x0e2%.travel_service_apis.v1.PassengerTypeR\x04type*Q\n" +
+	"\tlast_name\x18\x02 \x01(\tR\blastName\x12.\n" +
+	"\x04type\x18\x03 \x01(\x0e2\x1a.provider.v1.PassengerTypeR\x04type*Q\n" +
 	"\rPassengerType\x12\x1e\n" +
 	"\x1aPASSENGER_TYPE_UNSPECIFIED\x10\x00\x12\t\n" +
 	"\x05ADULT\x10\x01\x12\t\n" +
 	"\x05CHILD\x10\x02\x12\n" +
 	"\n" +
-	"\x06INFANT\x10\x03BZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"\x06INFANT\x10\x03B[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var (
 	file_provider_v1_passenger_proto_rawDescOnce sync.Once
@@ -165,11 +165,11 @@ func file_provider_v1_passenger_proto_rawDescGZIP() []byte {
 var file_provider_v1_passenger_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_provider_v1_passenger_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_provider_v1_passenger_proto_goTypes = []any{
-	(PassengerType)(0), // 0: travel_service_apis.v1.PassengerType
-	(*Passenger)(nil),  // 1: travel_service_apis.v1.Passenger
+	(PassengerType)(0), // 0: provider.v1.PassengerType
+	(*Passenger)(nil),  // 1: provider.v1.Passenger
 }
 var file_provider_v1_passenger_proto_depIdxs = []int32{
-	0, // 0: travel_service_apis.v1.Passenger.type:type_name -> travel_service_apis.v1.PassengerType
+	0, // 0: provider.v1.Passenger.type:type_name -> provider.v1.PassengerType
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

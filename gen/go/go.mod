@@ -1,4 +1,4 @@
-module github.com/sreejith-sreekantan/travel-service-apis/proto/provider
+module github.com/sreejith-sreekantan/travel-service-apis/gen/go
 
 go 1.25.0
 

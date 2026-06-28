@@ -137,18 +137,18 @@ var File_provider_v1_reservation_proto protoreflect.FileDescriptor
 
 const file_provider_v1_reservation_proto_rawDesc = "" +
 	"\n" +
-	"\x1dprovider/v1/reservation.proto\x12\x16travel_service_apis.v1\x1a\x18provider/v1/common.proto\x1a\x1bprovider/v1/passenger.proto\"\x9e\x01\n" +
-	"\x12ReservationRequest\x12E\n" +
-	"\tselection\x18\x01 \x01(\v2'.travel_service_apis.v1.FlightSelectionR\tselection\x12A\n" +
+	"\x1dprovider/v1/reservation.proto\x12\vprovider.v1\x1a\x18provider/v1/common.proto\x1a\x1bprovider/v1/passenger.proto\"\x88\x01\n" +
+	"\x12ReservationRequest\x12:\n" +
+	"\tselection\x18\x01 \x01(\v2\x1c.provider.v1.FlightSelectionR\tselection\x126\n" +
 	"\n" +
-	"passengers\x18\x02 \x03(\v2!.travel_service_apis.v1.PassengerR\n" +
-	"passengers\"\xb1\x01\n" +
+	"passengers\x18\x02 \x03(\v2\x16.provider.v1.PassengerR\n" +
+	"passengers\"\x9b\x01\n" +
 	"\x13ReservationResponse\x12\x10\n" +
-	"\x03pnr\x18\x01 \x01(\tR\x03pnr\x12E\n" +
-	"\tselection\x18\x02 \x01(\v2'.travel_service_apis.v1.FlightSelectionR\tselection\x12A\n" +
+	"\x03pnr\x18\x01 \x01(\tR\x03pnr\x12:\n" +
+	"\tselection\x18\x02 \x01(\v2\x1c.provider.v1.FlightSelectionR\tselection\x126\n" +
 	"\n" +
-	"passengers\x18\x03 \x03(\v2!.travel_service_apis.v1.PassengerR\n" +
-	"passengersBZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"passengers\x18\x03 \x03(\v2\x16.provider.v1.PassengerR\n" +
+	"passengersB[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var (
 	file_provider_v1_reservation_proto_rawDescOnce sync.Once
@@ -164,16 +164,16 @@ func file_provider_v1_reservation_proto_rawDescGZIP() []byte {
 
 var file_provider_v1_reservation_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_provider_v1_reservation_proto_goTypes = []any{
-	(*ReservationRequest)(nil),  // 0: travel_service_apis.v1.ReservationRequest
-	(*ReservationResponse)(nil), // 1: travel_service_apis.v1.ReservationResponse
-	(*FlightSelection)(nil),     // 2: travel_service_apis.v1.FlightSelection
-	(*Passenger)(nil),           // 3: travel_service_apis.v1.Passenger
+	(*ReservationRequest)(nil),  // 0: provider.v1.ReservationRequest
+	(*ReservationResponse)(nil), // 1: provider.v1.ReservationResponse
+	(*FlightSelection)(nil),     // 2: provider.v1.FlightSelection
+	(*Passenger)(nil),           // 3: provider.v1.Passenger
 }
 var file_provider_v1_reservation_proto_depIdxs = []int32{
-	2, // 0: travel_service_apis.v1.ReservationRequest.selection:type_name -> travel_service_apis.v1.FlightSelection
-	3, // 1: travel_service_apis.v1.ReservationRequest.passengers:type_name -> travel_service_apis.v1.Passenger
-	2, // 2: travel_service_apis.v1.ReservationResponse.selection:type_name -> travel_service_apis.v1.FlightSelection
-	3, // 3: travel_service_apis.v1.ReservationResponse.passengers:type_name -> travel_service_apis.v1.Passenger
+	2, // 0: provider.v1.ReservationRequest.selection:type_name -> provider.v1.FlightSelection
+	3, // 1: provider.v1.ReservationRequest.passengers:type_name -> provider.v1.Passenger
+	2, // 2: provider.v1.ReservationResponse.selection:type_name -> provider.v1.FlightSelection
+	3, // 3: provider.v1.ReservationResponse.passengers:type_name -> provider.v1.Passenger
 	4, // [4:4] is the sub-list for method output_type
 	4, // [4:4] is the sub-list for method input_type
 	4, // [4:4] is the sub-list for extension type_name

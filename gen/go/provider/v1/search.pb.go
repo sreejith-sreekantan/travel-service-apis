@@ -241,20 +241,20 @@ var File_provider_v1_search_proto protoreflect.FileDescriptor
 
 const file_provider_v1_search_proto_rawDesc = "" +
 	"\n" +
-	"\x18provider/v1/search.proto\x12\x16travel_service_apis.v1\x1a\x18provider/v1/flight.proto\x1a\x16provider/v1/fare.proto\"v\n" +
-	"\x10AirSearchRequest\x12=\n" +
-	"\x04ords\x18\x01 \x03(\v2).travel_service_apis.v1.OriginDestinationR\x04ords\x12#\n" +
+	"\x18provider/v1/search.proto\x12\vprovider.v1\x1a\x18provider/v1/flight.proto\x1a\x16provider/v1/fare.proto\"k\n" +
+	"\x10AirSearchRequest\x122\n" +
+	"\x04ords\x18\x01 \x03(\v2\x1e.provider.v1.OriginDestinationR\x04ords\x12#\n" +
 	"\rprovider_code\x18\x02 \x01(\tR\fproviderCode\"t\n" +
 	"\x11OriginDestination\x12\x16\n" +
 	"\x06origin\x18\x01 \x01(\tR\x06origin\x12 \n" +
 	"\vdestination\x18\x02 \x01(\tR\vdestination\x12%\n" +
-	"\x0edeparture_date\x18\x03 \x01(\tR\rdepartureDate\"G\n" +
-	"\x11AirSearchResponse\x122\n" +
-	"\x05trips\x18\x01 \x03(\v2\x1c.travel_service_apis.v1.TripR\x05trips\"\x8b\x01\n" +
+	"\x0edeparture_date\x18\x03 \x01(\tR\rdepartureDate\"<\n" +
+	"\x11AirSearchResponse\x12'\n" +
+	"\x05trips\x18\x01 \x03(\v2\x11.provider.v1.TripR\x05trips\"u\n" +
 	"\x04Trip\x12\x17\n" +
-	"\atrip_id\x18\x01 \x01(\tR\x06tripId\x128\n" +
-	"\aflights\x18\x02 \x03(\v2\x1e.travel_service_apis.v1.FlightR\aflights\x120\n" +
-	"\x04fare\x18\x03 \x01(\v2\x1c.travel_service_apis.v1.FareR\x04fareBZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"\atrip_id\x18\x01 \x01(\tR\x06tripId\x12-\n" +
+	"\aflights\x18\x02 \x03(\v2\x13.provider.v1.FlightR\aflights\x12%\n" +
+	"\x04fare\x18\x03 \x01(\v2\x11.provider.v1.FareR\x04fareB[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var (
 	file_provider_v1_search_proto_rawDescOnce sync.Once
@@ -270,18 +270,18 @@ func file_provider_v1_search_proto_rawDescGZIP() []byte {
 
 var file_provider_v1_search_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_provider_v1_search_proto_goTypes = []any{
-	(*AirSearchRequest)(nil),  // 0: travel_service_apis.v1.AirSearchRequest
-	(*OriginDestination)(nil), // 1: travel_service_apis.v1.OriginDestination
-	(*AirSearchResponse)(nil), // 2: travel_service_apis.v1.AirSearchResponse
-	(*Trip)(nil),              // 3: travel_service_apis.v1.Trip
-	(*Flight)(nil),            // 4: travel_service_apis.v1.Flight
-	(*Fare)(nil),              // 5: travel_service_apis.v1.Fare
+	(*AirSearchRequest)(nil),  // 0: provider.v1.AirSearchRequest
+	(*OriginDestination)(nil), // 1: provider.v1.OriginDestination
+	(*AirSearchResponse)(nil), // 2: provider.v1.AirSearchResponse
+	(*Trip)(nil),              // 3: provider.v1.Trip
+	(*Flight)(nil),            // 4: provider.v1.Flight
+	(*Fare)(nil),              // 5: provider.v1.Fare
 }
 var file_provider_v1_search_proto_depIdxs = []int32{
-	1, // 0: travel_service_apis.v1.AirSearchRequest.ords:type_name -> travel_service_apis.v1.OriginDestination
-	3, // 1: travel_service_apis.v1.AirSearchResponse.trips:type_name -> travel_service_apis.v1.Trip
-	4, // 2: travel_service_apis.v1.Trip.flights:type_name -> travel_service_apis.v1.Flight
-	5, // 3: travel_service_apis.v1.Trip.fare:type_name -> travel_service_apis.v1.Fare
+	1, // 0: provider.v1.AirSearchRequest.ords:type_name -> provider.v1.OriginDestination
+	3, // 1: provider.v1.AirSearchResponse.trips:type_name -> provider.v1.Trip
+	4, // 2: provider.v1.Trip.flights:type_name -> provider.v1.Flight
+	5, // 3: provider.v1.Trip.fare:type_name -> provider.v1.Fare
 	4, // [4:4] is the sub-list for method output_type
 	4, // [4:4] is the sub-list for method input_type
 	4, // [4:4] is the sub-list for extension type_name

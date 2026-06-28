@@ -19,9 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	ProviderService_Search_FullMethodName  = "/travel_service_apis.v1.ProviderService/Search"
-	ProviderService_Price_FullMethodName   = "/travel_service_apis.v1.ProviderService/Price"
-	ProviderService_Reserve_FullMethodName = "/travel_service_apis.v1.ProviderService/Reserve"
+	ProviderService_Search_FullMethodName  = "/provider.v1.ProviderService/Search"
+	ProviderService_Price_FullMethodName   = "/provider.v1.ProviderService/Price"
+	ProviderService_Reserve_FullMethodName = "/provider.v1.ProviderService/Reserve"
 )
 
 // ProviderServiceClient is the client API for ProviderService service.
@@ -176,7 +176,7 @@ func _ProviderService_Reserve_Handler(srv interface{}, ctx context.Context, dec 
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var ProviderService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "travel_service_apis.v1.ProviderService",
+	ServiceName: "provider.v1.ProviderService",
 	HandlerType: (*ProviderServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

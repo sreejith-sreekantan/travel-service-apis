@@ -121,12 +121,12 @@ var File_provider_v1_pricing_proto protoreflect.FileDescriptor
 
 const file_provider_v1_pricing_proto_rawDesc = "" +
 	"\n" +
-	"\x19provider/v1/pricing.proto\x12\x16travel_service_apis.v1\x1a\x18provider/v1/common.proto\x1a\x19provider/v1/penalty.proto\"U\n" +
-	"\fPriceRequest\x12E\n" +
-	"\tselection\x18\x01 \x01(\v2'.travel_service_apis.v1.FlightSelectionR\tselection\"\x91\x01\n" +
-	"\rPriceResponse\x12E\n" +
-	"\tselection\x18\x01 \x01(\v2'.travel_service_apis.v1.FlightSelectionR\tselection\x129\n" +
-	"\apenalty\x18\x02 \x01(\v2\x1f.travel_service_apis.v1.PenaltyR\apenaltyBZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"\x19provider/v1/pricing.proto\x12\vprovider.v1\x1a\x18provider/v1/common.proto\x1a\x19provider/v1/penalty.proto\"J\n" +
+	"\fPriceRequest\x12:\n" +
+	"\tselection\x18\x01 \x01(\v2\x1c.provider.v1.FlightSelectionR\tselection\"{\n" +
+	"\rPriceResponse\x12:\n" +
+	"\tselection\x18\x01 \x01(\v2\x1c.provider.v1.FlightSelectionR\tselection\x12.\n" +
+	"\apenalty\x18\x02 \x01(\v2\x14.provider.v1.PenaltyR\apenaltyB[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var (
 	file_provider_v1_pricing_proto_rawDescOnce sync.Once
@@ -142,15 +142,15 @@ func file_provider_v1_pricing_proto_rawDescGZIP() []byte {
 
 var file_provider_v1_pricing_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_provider_v1_pricing_proto_goTypes = []any{
-	(*PriceRequest)(nil),    // 0: travel_service_apis.v1.PriceRequest
-	(*PriceResponse)(nil),   // 1: travel_service_apis.v1.PriceResponse
-	(*FlightSelection)(nil), // 2: travel_service_apis.v1.FlightSelection
-	(*Penalty)(nil),         // 3: travel_service_apis.v1.Penalty
+	(*PriceRequest)(nil),    // 0: provider.v1.PriceRequest
+	(*PriceResponse)(nil),   // 1: provider.v1.PriceResponse
+	(*FlightSelection)(nil), // 2: provider.v1.FlightSelection
+	(*Penalty)(nil),         // 3: provider.v1.Penalty
 }
 var file_provider_v1_pricing_proto_depIdxs = []int32{
-	2, // 0: travel_service_apis.v1.PriceRequest.selection:type_name -> travel_service_apis.v1.FlightSelection
-	2, // 1: travel_service_apis.v1.PriceResponse.selection:type_name -> travel_service_apis.v1.FlightSelection
-	3, // 2: travel_service_apis.v1.PriceResponse.penalty:type_name -> travel_service_apis.v1.Penalty
+	2, // 0: provider.v1.PriceRequest.selection:type_name -> provider.v1.FlightSelection
+	2, // 1: provider.v1.PriceResponse.selection:type_name -> provider.v1.FlightSelection
+	3, // 2: provider.v1.PriceResponse.penalty:type_name -> provider.v1.Penalty
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

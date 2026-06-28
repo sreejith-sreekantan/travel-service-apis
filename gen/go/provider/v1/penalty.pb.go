@@ -85,13 +85,13 @@ var File_provider_v1_penalty_proto protoreflect.FileDescriptor
 
 const file_provider_v1_penalty_proto_rawDesc = "" +
 	"\n" +
-	"\x19provider/v1/penalty.proto\x12\x16travel_service_apis.v1\"e\n" +
+	"\x19provider/v1/penalty.proto\x12\vprovider.v1\"e\n" +
 	"\aPenalty\x12\x1e\n" +
 	"\n" +
 	"refundable\x18\x01 \x01(\bR\n" +
 	"refundable\x12\"\n" +
 	"\fcancellation\x18\x02 \x01(\tR\fcancellation\x12\x16\n" +
-	"\x06change\x18\x03 \x01(\tR\x06changeBZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"\x06change\x18\x03 \x01(\tR\x06changeB[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var (
 	file_provider_v1_penalty_proto_rawDescOnce sync.Once
@@ -107,7 +107,7 @@ func file_provider_v1_penalty_proto_rawDescGZIP() []byte {
 
 var file_provider_v1_penalty_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_provider_v1_penalty_proto_goTypes = []any{
-	(*Penalty)(nil), // 0: travel_service_apis.v1.Penalty
+	(*Penalty)(nil), // 0: provider.v1.Penalty
 }
 var file_provider_v1_penalty_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

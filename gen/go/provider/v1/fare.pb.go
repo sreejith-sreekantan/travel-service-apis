@@ -93,14 +93,14 @@ var File_provider_v1_fare_proto protoreflect.FileDescriptor
 
 const file_provider_v1_fare_proto_rawDesc = "" +
 	"\n" +
-	"\x16provider/v1/fare.proto\x12\x16travel_service_apis.v1\"\x83\x01\n" +
+	"\x16provider/v1/fare.proto\x12\vprovider.v1\"\x83\x01\n" +
 	"\x04Fare\x12!\n" +
 	"\ftotal_amount\x18\x01 \x01(\x01R\vtotalAmount\x12\x1a\n" +
 	"\bcurrency\x18\x02 \x01(\tR\bcurrency\x12\x1d\n" +
 	"\n" +
 	"fare_basis\x18\x03 \x01(\tR\tfareBasis\x12\x1d\n" +
 	"\n" +
-	"brand_code\x18\x04 \x01(\tR\tbrandCodeBZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"brand_code\x18\x04 \x01(\tR\tbrandCodeB[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var (
 	file_provider_v1_fare_proto_rawDescOnce sync.Once
@@ -116,7 +116,7 @@ func file_provider_v1_fare_proto_rawDescGZIP() []byte {
 
 var file_provider_v1_fare_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_provider_v1_fare_proto_goTypes = []any{
-	(*Fare)(nil), // 0: travel_service_apis.v1.Fare
+	(*Fare)(nil), // 0: provider.v1.Fare
 }
 var file_provider_v1_fare_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

@@ -77,10 +77,10 @@ var File_provider_v1_common_proto protoreflect.FileDescriptor
 
 const file_provider_v1_common_proto_rawDesc = "" +
 	"\n" +
-	"\x18provider/v1/common.proto\x12\x16travel_service_apis.v1\x1a\x18provider/v1/flight.proto\x1a\x16provider/v1/fare.proto\"}\n" +
-	"\x0fFlightSelection\x128\n" +
-	"\aflights\x18\x01 \x03(\v2\x1e.travel_service_apis.v1.FlightR\aflights\x120\n" +
-	"\x04fare\x18\x02 \x01(\v2\x1c.travel_service_apis.v1.FareR\x04fareBZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"\x18provider/v1/common.proto\x12\vprovider.v1\x1a\x18provider/v1/flight.proto\x1a\x16provider/v1/fare.proto\"g\n" +
+	"\x0fFlightSelection\x12-\n" +
+	"\aflights\x18\x01 \x03(\v2\x13.provider.v1.FlightR\aflights\x12%\n" +
+	"\x04fare\x18\x02 \x01(\v2\x11.provider.v1.FareR\x04fareB[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var (
 	file_provider_v1_common_proto_rawDescOnce sync.Once
@@ -96,13 +96,13 @@ func file_provider_v1_common_proto_rawDescGZIP() []byte {
 
 var file_provider_v1_common_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_provider_v1_common_proto_goTypes = []any{
-	(*FlightSelection)(nil), // 0: travel_service_apis.v1.FlightSelection
-	(*Flight)(nil),          // 1: travel_service_apis.v1.Flight
-	(*Fare)(nil),            // 2: travel_service_apis.v1.Fare
+	(*FlightSelection)(nil), // 0: provider.v1.FlightSelection
+	(*Flight)(nil),          // 1: provider.v1.Flight
+	(*Fare)(nil),            // 2: provider.v1.Fare
 }
 var file_provider_v1_common_proto_depIdxs = []int32{
-	1, // 0: travel_service_apis.v1.FlightSelection.flights:type_name -> travel_service_apis.v1.Flight
-	2, // 1: travel_service_apis.v1.FlightSelection.fare:type_name -> travel_service_apis.v1.Fare
+	1, // 0: provider.v1.FlightSelection.flights:type_name -> provider.v1.Flight
+	2, // 1: provider.v1.FlightSelection.fare:type_name -> provider.v1.Fare
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

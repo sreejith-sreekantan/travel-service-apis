@@ -125,7 +125,7 @@ var File_provider_v1_flight_proto protoreflect.FileDescriptor
 
 const file_provider_v1_flight_proto_rawDesc = "" +
 	"\n" +
-	"\x18provider/v1/flight.proto\x12\x16travel_service_apis.v1\"\x8d\x02\n" +
+	"\x18provider/v1/flight.proto\x12\vprovider.v1\"\x8d\x02\n" +
 	"\x06Flight\x12\x1b\n" +
 	"\tflight_id\x18\x01 \x01(\tR\bflightId\x12\x18\n" +
 	"\aairline\x18\x02 \x01(\tR\aairline\x12#\n" +
@@ -134,7 +134,7 @@ const file_provider_v1_flight_proto_rawDesc = "" +
 	"\vdestination\x18\x05 \x01(\tR\vdestination\x12%\n" +
 	"\x0edeparture_time\x18\x06 \x01(\tR\rdepartureTime\x12!\n" +
 	"\farrival_time\x18\a \x01(\tR\varrivalTime\x12#\n" +
-	"\rbooking_class\x18\b \x01(\tR\fbookingClassBZZXgithub.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1b\x06proto3"
+	"\rbooking_class\x18\b \x01(\tR\fbookingClassB[ZYgithub.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1b\x06proto3"
 
 var (
 	file_provider_v1_flight_proto_rawDescOnce sync.Once
@@ -150,7 +150,7 @@ func file_provider_v1_flight_proto_rawDescGZIP() []byte {
 
 var file_provider_v1_flight_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_provider_v1_flight_proto_goTypes = []any{
-	(*Flight)(nil), // 0: travel_service_apis.v1.Flight
+	(*Flight)(nil), // 0: provider.v1.Flight
 }
 var file_provider_v1_flight_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
