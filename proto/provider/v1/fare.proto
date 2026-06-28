@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package travel_service_apis.v1;
+package provider.v1;
 
-option go_package = "github.com/sreejith-sreekantan/travel-service-apis/proto/provider/v1;travelserviceapisv1";
+option go_package = "github.com/sreejith-sreekantan/travel-service-apis/gen/go/provider/v1;travelserviceapisv1";
 
 message Fare {
   double total_amount = 1;
