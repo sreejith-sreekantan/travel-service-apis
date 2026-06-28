@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+message Penalty {
+  bool refundable = 1;
+  string cancellation = 2;
+  string change = 3;
+}

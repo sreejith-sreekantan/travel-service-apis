@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+message Flight {
+  string flight_id = 1;
+
+  string airline = 2;
+  string flight_number = 3;
+
+  string origin = 4;
+  string destination = 5;
+
+  string departure_time = 6;
+  string arrival_time = 7;
+
+  string booking_class = 8;
+}

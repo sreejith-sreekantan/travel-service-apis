@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+enum PassengerType {
+  PASSENGER_TYPE_UNSPECIFIED = 0;
+  ADULT = 1;
+  CHILD = 2;
+  INFANT = 3;
+}
+
+message Passenger {
+  string first_name = 1;
+  string last_name = 2;
+
+  PassengerType type = 3;
+}

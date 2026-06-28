@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+import "provider/v1/flight.proto";
+import "provider/v1/fare.proto";
+
+message AirSearchRequest {
+  repeated OriginDestination ords = 1;
+  string provider_code = 2;
+}
+
+message OriginDestination {
+  string origin = 1;
+  string destination = 2;
+  string departure_date = 3; // YYYY-MM-DD
+}
+
+message AirSearchResponse {
+  repeated Trip trips = 1;
+}
+
+message Trip {
+  string trip_id = 1;
+  repeated Flight flights = 2;
+  Fare fare = 3;
+}

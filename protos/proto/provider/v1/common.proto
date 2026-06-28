@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+import "provider/v1/flight.proto";
+import "provider/v1/fare.proto";
+
+message FlightSelection {
+  repeated Flight flights = 1;
+  Fare fare = 2;
+}

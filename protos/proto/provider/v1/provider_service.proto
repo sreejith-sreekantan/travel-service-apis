@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+import "provider/v1/search.proto";
+import "provider/v1/pricing.proto";
+import "provider/v1/reservation.proto";
+
+service ProviderService {
+  rpc Search(AirSearchRequest) returns (AirSearchResponse);
+  rpc Price(PriceRequest) returns (PriceResponse);
+  rpc Reserve(ReservationRequest) returns (ReservationResponse);
+}

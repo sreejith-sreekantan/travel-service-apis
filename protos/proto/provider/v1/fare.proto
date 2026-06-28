@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+message Fare {
+  double total_amount = 1;
+  string currency = 2;
+
+  string fare_basis = 3;
+  string brand_code = 4;
+}

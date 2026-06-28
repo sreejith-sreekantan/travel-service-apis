@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+import "provider/v1/common.proto";
+import "provider/v1/penalty.proto";
+
+message PriceRequest {
+  FlightSelection selection = 1;
+}
+
+message PriceResponse {
+  FlightSelection selection = 1;
+  Penalty penalty = 2;
+}

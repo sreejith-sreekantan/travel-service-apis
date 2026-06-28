@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "github.com/sreejith-sreekantan/travel-services-protos/proto/provider/v1;providerv1";
+
+import "provider/v1/common.proto";
+import "provider/v1/passenger.proto";
+
+message ReservationRequest {
+  FlightSelection selection = 1;
+  repeated Passenger passengers = 2;
+}
+
+message ReservationResponse {
+  string pnr = 1;
+
+  FlightSelection selection = 2;
+
+  repeated Passenger passengers = 3;
+}
